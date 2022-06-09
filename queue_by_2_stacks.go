@@ -26,7 +26,6 @@ func (sa *QueueByTwoStacks) notEmptyAndEmptyOnes() (pushPopPeek, pushPopPeek) {
 		full = sa.Stack1
 		empty = sa.Stack2
 	} else {
-		log.Println("second not empty")
 		full = sa.Stack2
 		empty = sa.Stack1
 	}
@@ -60,6 +59,5 @@ func move(notEmpty, empty pushPopPeek) {
 			break
 		}
 		empty.Push(*v)
-		log.Println("pushed", *v)
 	}
 }
